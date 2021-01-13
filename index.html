@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        border-style: solid;
+        height: 400px;
+        width: 10%;
+        text-align: center;
+        margin: 9px auto;
+      }
+
+      /* .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      } */
+
+      #h1 {
+        font: Monaco;
+      }
+    </style>
+
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script2.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+    <script src="https://unpkg.com/p5.collide2d"></script>
+  </head>
+  <body>
+    <center><h1 style="font-family:'Georgia, serif'">📍 Exploring Google Maps 📍 </h1></center>
+    <center><h4 style="font-family:'Georgia, serif'">Creators: Esha Kapoor and Lisa Wang</h4></center>
+
+    <center><script defer src="script.js"></script></center>
+
+    <div id="map"></div>
+    <center>
+      <script>
+              function initMap() {
+                var myLatlng = { lat: -25.363, lng: 131.044 };
+                map = new google.maps.Map(document.getElementById("map"), {
+                  center: { myLatlng },
+                  zoom: 10
+                });
+              }
+              dots = [];
+        for (let i = 0; i < 1000; i++) {
+          dots.push(new BouncyDot());
+      </script>
+    </center>
+    <center>
+      <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAll251l4c6oqn2dAmObTUv-pTx87DPKrw&callback=initMap"
+      >
+        console.log('working');
+      </script>
+    </center>
+    <center>
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyJG40Dj1ZW5GXIuMAvnxw1g5souRQxG8&callback=initMap&libraries=&v=weekly"
+        defer
+      ></script>
+    </center>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./app.js"></script>
+
+    <center>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    </center>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YAIzaSyDRByLyOjXnAcgKNb9lJmWa9F13ayf9iuY&libraries=places"></script>
+
+    <!-- <i> Made by Esha Kapoor & Lisa Wang</i> -->
+    <center><h4 style="font-family:'Georgia, serif'">Click play to listen while exploring the map</h4></center>
+    <center>
+      <audio controls>
+        <source
+          src="https://cdn.glitch.com/e41f8a91-d9b6-4bd4-9373-51e807eeb66b%2FSatieJeteveuxmp3.mp3?v=1596148440622"
+          type="audio/mpeg"
+        />
+      </audio>
+    </center>
+  </body>
+</html>
